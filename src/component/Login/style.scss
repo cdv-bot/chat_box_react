@@ -1,0 +1,109 @@
+$rd: 6px;
+
+.login {
+  width: auto;
+  height: auto;
+  &-ip {
+    background: #f0f2f5;
+    display: flex;
+    padding: 9em 22em;
+    .ts {
+      padding-top: 5em;
+      width: auto;
+      margin-right: 30px;
+      img {
+        width: 300px;
+        height: auto;
+      }
+      .tt {
+        font-size: 30px;
+        padding-left: 27px;
+      }
+    }
+  }
+  &_from {
+    .from_input {
+      width: fit-content;
+      border-radius: $rd;
+      width: 396px;
+      height: 377px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      .from_nhap {
+        display: flex;
+        flex-direction: column;
+        padding: 1.2em;
+        input[placeholder] {
+          padding: 15px;
+          opacity: 0.7;
+        }
+        button {
+          background-color: #1877f2;
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 20px;
+          border: none;
+        }
+
+        * {
+          border: 2px solid #eee;
+          margin: 5px;
+          width: auto;
+          height: 60px;
+          border-radius: $rd;
+          &:focus {
+            border: 2px solid #eee;
+            border-color: #7e45b3;
+            outline-width: 0;
+          }
+        }
+      }
+    }
+    .forget {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &_bt {
+        height: 50px;
+        width: 210px;
+        border-radius: $rd;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #3dd01f;
+        border: none;
+        color: white;
+        &:focus {
+          outline-width: 0;
+        }
+        &:hover {
+          background-color: #36a420;
+        }
+      }
+    }
+    .text_view {
+      margin-top: 30px;
+      text-align: center;
+      a {
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+  .footer {
+    width: 99em;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 312px;
+    &_lg > a {
+      margin-right: 6px;
+    }
+    &_lg > button {
+      width: 30px;
+      height: 20px;
+    }
+  }
+}
+
+.sn {
+  position: absolute;
+}

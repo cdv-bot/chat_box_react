@@ -1,0 +1,89 @@
+.Paneo {
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  &-name {
+    border-right: 1px solid rgb(235, 211, 211);
+    width: 60rem;
+    height: 100%;
+    // background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    .text-left span {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .icon-right {
+      display: flex;
+      .ic {
+        background-color: silver;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-hd {
+          font-size: 2.8rem;
+        }
+        &-left {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+  &-content {
+    width: 100%;
+    height: 100%;
+    // background-color: rosybrown;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    .right-text {
+      span {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+    .right-icon {
+      width: 90px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .ic-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: slateblue;
+        width: 50px;
+        height: 30px;
+        border-radius: 20px;
+        .ic-hd {
+          color: blanchedalmond;
+          font-size: 20px;
+        }
+      }
+      .ic-two {
+        background-color: #6495ed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        .ic-hd {
+          font-size: 20px;
+          // background-color: blanchedalmond;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 740px) {
+}

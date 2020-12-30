@@ -1,0 +1,37 @@
+.you_send {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  background-color: blanchedalmond;
+  padding: 5px;
+  border-radius: 15px;
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+  }
+  .avt {
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+    }
+  }
+  .name {
+    margin-left: 10px;
+
+    &-you {
+      font-weight: 500;
+      font-size: 20px;
+    }
+    &-text {
+      color: rgba(153, 153, 153, 1);
+      white-space: pre;
+      overflow: hidden;
+      width: 330px;
+      word-wrap: break-word;
+    }
+  }
+}

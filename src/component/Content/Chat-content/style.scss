@@ -1,0 +1,115 @@
+@mixin custom {
+  padding: 0;
+  width: 50%;
+  background-color: #f1f0f0;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  word-break: break-all;
+  span {
+    white-space: pre-line;
+    width: 1px;
+  }
+}
+
+.Chat {
+  height: 64rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 20px;
+  }
+  &:hover::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: rgb(79, 153, 137);
+  }
+  .You {
+    @include custom();
+  }
+  .Me {
+    @include custom();
+    margin-left: 50%;
+  }
+}
+
+.input_text {
+  display: flex;
+  align-items: center;
+  .text_name {
+    position: relative;
+    input {
+      width: 35.5em;
+      height: 37px;
+      border: none;
+      background-color: #eee;
+      border-radius: 30px;
+      margin-bottom: 6px;
+
+      &:focus {
+        outline-width: 0;
+      }
+      &[placeholder] {
+        padding-left: 20px;
+      }
+    }
+    .prs {
+      position: absolute;
+      right: 0;
+      top: 6px;
+    }
+  }
+  .hds {
+    width: 26px;
+    height: 26px;
+    margin: 0 5px;
+  }
+
+  .icon-smile {
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .icon {
+    display: none;
+  }
+  .input_text {
+    display: flex;
+    align-items: center;
+    .text_name {
+      position: relative;
+      input {
+        width: 24em;
+        height: 37px;
+        border: none;
+        background-color: #eee;
+        border-radius: 30px;
+        margin-bottom: 6px;
+
+        &:focus {
+          outline-width: 0;
+        }
+        &[placeholder] {
+          padding-left: 20px;
+        }
+      }
+      .prs {
+        position: absolute;
+        right: 0;
+        top: 6px;
+      }
+    }
+    .hds {
+      width: 26px;
+      height: 26px;
+      margin: 0 5px;
+    }
+
+    .icon-smile {
+      margin: 0 1px;
+    }
+  }
+}
